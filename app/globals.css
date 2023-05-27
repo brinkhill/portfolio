@@ -1,6 +1,7 @@
 :root {
   --background: #353640;
   --primary: #fff;
+  --secondary: #908f90;
 }
 
 * {
@@ -32,9 +33,6 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   padding: 1vh;
-}
-
-.catcher {
 }
 
 .catcher-box {

@@ -1,20 +1,24 @@
 import Navbar from "./nav/Navbar";
+import Projects from "./projects/projects";
 
 export default function Index() {
   return (
-    <main>
-      <Navbar />
-      <div className="catcher-box">
-        <div className="catcher">
-          <h1 className="name">Brinkley Hill</h1>
-          <div>
-            <h2 className="desc">
-              a software <span className="tester-text">tester</span> & <span className="dev-text">developer</span>.
-            </h2>
+    <div>
+      <main>
+        <Navbar />
+        <div className="catcher-box">
+          <div className="catcher">
+            <h1 className="name">Brinkley Hill</h1>
+            <div>
+              <h2 className="desc">
+                a software <span className="tester-text">tester</span> & <span className="dev-text">developer</span>.
+              </h2>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+      <Projects />
+    </div>
   );
 }
 
