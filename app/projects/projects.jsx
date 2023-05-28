@@ -3,8 +3,12 @@ import Card from "./card/card";
 
 export default function Projects() {
   return (
-    <div className="projects">
-      <Card />
+    <div>
+      <h3 className="projects-title">Projects</h3>
+
+      <div className="projects">
+        <Card />
+      </div>
     </div>
   );
 }

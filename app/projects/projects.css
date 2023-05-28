@@ -1,7 +1,23 @@
 .projects {
-  min-height: 82vh;
+  min-height: 50vh;
   padding: 1vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.projects-title {
+  padding: 1vh;
+  padding-left: 3vw;
+  display: flex;
+  align-items: end;
+
+  min-height: 12vh;
+
+  font-size: 3em;
+}
+/* 
+hr {
+  margin-left: 6vw;
+  margin-right: 6vw;
+} */

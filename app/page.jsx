@@ -1,11 +1,12 @@
 import Navbar from "./nav/Navbar";
 import Projects from "./projects/projects";
+import Footer from "./footer/Footer";
 
 export default function Index() {
   return (
-    <div>
+    <div className="index">
+      <Navbar />
       <main>
-        <Navbar />
         <div className="catcher-box">
           <div className="catcher">
             <h1 className="name">Brinkley Hill</h1>
@@ -18,6 +19,7 @@ export default function Index() {
         </div>
       </main>
       <Projects />
+      <Footer />
     </div>
   );
 }

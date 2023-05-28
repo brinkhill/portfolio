@@ -13,6 +13,7 @@
 html,
 body {
   max-width: 100vw;
+  min-width: 100vh;
   overflow-x: hidden;
 }
 body {
@@ -27,8 +28,8 @@ a {
 }
 
 main {
-  min-height: 82vh;
-  background-image: linear-gradient(rgba(212, 145, 51, 0.161), #353640af), url(/wallpaper.webp);
+  min-height: 80vh;
+  background-image: linear-gradient(rgba(212, 145, 51, 0.161), #353640af), url(/e-building.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,7 +41,7 @@ main {
   justify-content: flex-start;
   align-items: flex-end;
   padding: 3vh;
-  height: 70vh;
+  height: 90vh;
 }
 
 .name {

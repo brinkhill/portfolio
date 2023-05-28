@@ -38,40 +38,46 @@
   pointer-events: none;
 }
 
-/* .big-card:nth-child(2) {
-  background-image: url("https://images.unsplash.com/photo-1568572933382-74d440642117?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZG9nc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60n");
-  transform: translateX(-10%) rotate(-1deg);
-}
-
-.big-card:nth-child(4) {
-  background-image: url("https://images.unsplash.com/photo-1534351450181-ea9f78427fe8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGRvZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
-  transform: rotate(2deg);
-}
-
-.big-card:nth-child(6) {
-  background-image: url("https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGRvZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
-  transform: translateX(-6%) rotate(-3deg);
-} */
-
-.big-card:nth-child(5) {
+.card-group[data-index="1"] > .big-card:nth-child(5) {
   background-image: url(/discrr.png);
   transition: 0.3s ease;
 }
 
-.little-card:nth-child(1) {
+.card-group[data-index="1"] > .little-card:nth-child(1) {
   background-image: url(/mongodb.png);
 }
 
-.little-card:nth-child(2) {
+.card-group[data-index="1"] > .little-card:nth-child(2) {
   background-image: url(/css.jpeg);
 }
 
-.little-card:nth-child(3) {
+.card-group[data-index="1"] > .little-card:nth-child(3) {
   background-image: url(/nextjs.png);
 }
 
-.little-card:nth-child(4) {
+.card-group[data-index="1"] > .little-card:nth-child(4) {
   background-image: url(/vercel.png);
+}
+
+.card-group[data-index="2"] > .big-card:nth-child(5) {
+  background-image: url(/apex.png);
+  transition: 0.3s ease;
+}
+
+.card-group[data-index="2"] > .little-card:nth-child(1) {
+  background-image: url(/bluehost.webp);
+}
+
+.card-group[data-index="2"] > .little-card:nth-child(3) {
+  background-image: url(/angular.jpeg);
+}
+
+.card-group[data-index="2"] > .little-card:nth-child(2) {
+  background-image: url(/css.jpeg);
+}
+
+.card-group[data-index="2"] > .little-card:nth-child(4) {
+  background-image: url(/typescript.png);
 }
 
 .card-group:hover > .card {
@@ -84,19 +90,19 @@
 }
 
 .card-group:hover > .little-card:nth-child(1) {
-  transform: translate(160%, -170%) rotate(-15deg);
+  transform: translate(200%, -170%) rotate(-15deg);
 }
 
 .card-group:hover > .little-card:nth-child(2) {
-  transform: translate(150%, 100%) rotate(15deg);
+  transform: translate(190%, 100%) rotate(15deg);
 }
 
 .card-group:hover > .little-card:nth-child(3) {
-  transform: translate(-250%, -170%) rotate(15deg);
+  transform: translate(-290%, -170%) rotate(15deg);
 }
 
 .card-group:hover > .little-card:nth-child(4) {
-  transform: translate(-250%, 100%) rotate(-15deg);
+  transform: translate(-290%, 100%) rotate(-15deg);
 }
 
 .hover-warning {
@@ -118,6 +124,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  width: 90%;
 }
 
 .github-icon {
@@ -130,6 +137,11 @@
 
 .project-title {
   padding-bottom: 1.5vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
 }
 
 .cards {
@@ -137,7 +149,11 @@
   justify-content: space-around;
   width: 100%;
 }
-
+.cards-0 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 /* @media (max-width: 900px) {
   .cards {
     display: block;

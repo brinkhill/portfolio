@@ -7,7 +7,7 @@ export default function Card() {
       <div>
         <div className="project-title">Discrr | Disc Ratings & Reviews</div>
         <div class="card-groups">
-          <div class="card-group" data-index="0" data-status="active">
+          <div class="card-group" data-index="1" data-status="active">
             <div class="little-card card"></div>
 
             <div class="little-card card"></div>
@@ -45,9 +45,9 @@ export default function Card() {
         </div>
       </div>
       <div>
-        <div className="project-title">Discrr | Disc Ratings & Reviews</div>
+        <div className="project-title">Apex Collision Center</div>
         <div class="card-groups">
-          <div class="card-group" data-index="0" data-status="active">
+          <div class="card-group" data-index="2" data-status="active">
             <div class="little-card card"></div>
 
             <div class="little-card card"></div>
@@ -55,17 +55,17 @@ export default function Card() {
             <div class="little-card card"></div>
 
             <div class="little-card card"></div>
-            <Link href="https://discrr.com" class="big-card card"></Link>
+            <Link href="https://apexcollisioncenters.com" class="big-card card"></Link>
           </div>
         </div>
         <p className="hover-warning">hover for tech stack</p>
 
         <div className="info-text">
-          <Link href="https://discrr.com">
-            🚀 <span className="site-link"> discrr.com</span>
+          <Link href="https://apexcollisioncenters.com">
+            🚀 <span className="site-link">apexcollisioncenters.com</span>
           </Link>
           |
-          <Link href="https://github.com/brinkhill/discrr">
+          <Link href="https://github.com/brinkhill/apex-collision-centers">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
