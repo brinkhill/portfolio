@@ -3,29 +3,29 @@ import Projects from "./projects/projects";
 import Footer from "./footer/Footer";
 
 export default function Index() {
-  return (
-    <div className="index">
-      <Navbar />
-      <main>
-        <div className="catcher-box">
-          <div className="catcher">
-            <h1 className="name">Brinkley Hill</h1>
-            <div>
-              <h2 className="desc">
-                a software <span className="tester-text">tester</span> & <span className="dev-text">developer</span>.
-              </h2>
-            </div>
-          </div>
-        </div>
-      </main>
-      <Projects />
-      <Footer />
+ return (
+  <div className="index">
+   <Navbar />
+   <main>
+    <div className="catcher-box">
+     <div className="catcher">
+      <h1 className="name">Brinkley Hill</h1>
+      <div>
+       <h2 className="desc">
+        a software <span className="tester-text">tester</span> & <span className="dev-text">developer</span>.
+       </h2>
+      </div>
+     </div>
     </div>
-  );
+   </main>
+   {/* <Projects />
+      <Footer /> */}
+  </div>
+ );
 }
 
 {
-  /* <div>
+ /* <div>
 <h2>Career Objective</h2>
 <p>
   Results-driven Quality Analyst Engineer with expertise in delivering high-quality UI and API automated testing. Seeking opportunities to

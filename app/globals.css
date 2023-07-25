@@ -1,61 +1,77 @@
 :root {
-  --background: #353640;
-  --primary: #fff;
-  --secondary: #908f90;
+ --background: #353640;
+ --primary: #fff;
+ --secondary: #908f90;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+div {
+ transition: 0.7s;
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+ max-width: 100vw;
+ overflow-x: hidden;
 }
 body {
-  background-color: var(--background);
-  color: var(--primary);
-  letter-spacing: 0.8px;
+ background-color: var(--background);
+ color: var(--primary);
+ letter-spacing: 0.8px;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+ color: inherit;
+ text-decoration: none;
 }
 
 main {
-  min-height: 80vh;
-  background-image: linear-gradient(rgba(212, 145, 51, 0.161), #353640af), url(/e-building.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 1vh;
+ min-height: 100svh;
+ background-image: linear-gradient(rgba(212, 145, 51, 0.161), #353640af), url(/building.webp);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ padding: 1vh;
 }
 
 .catcher-box {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding: 3vh;
-  height: 90vh;
+ display: flex;
+ justify-content: flex-start;
+ align-items: flex-end;
+ padding: 3vh;
+ height: 97vh;
 }
 
 .name {
-  font-size: 4em;
+ font-size: 4em;
+ transition: 0.7s;
 }
 .desc {
-  font-size: 3em;
+ font-size: 3em;
+ transition: 0.7s;
 }
 
 .dev-icon {
-  scale: 1.5;
-  margin-right: 2vh;
-  margin-left: 1vh;
-  transition: 0.3s;
+ scale: 1.5;
+ margin-right: 2vh;
+ margin-left: 1vh;
+ transition: 0.3s;
 }
 .dev-icon:hover {
-  transform: rotate(180deg);
+ transform: rotate(180deg);
+}
+
+@media (max-width: 900px) {
+ .name {
+  font-size: 3em;
+ }
+
+ .desc {
+  font-size: 2em;
+ }
 }
