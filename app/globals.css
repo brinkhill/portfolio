@@ -31,7 +31,7 @@ a {
 }
 
 main {
- min-height: 100svh;
+ max-height: 100svh;
  background-image: linear-gradient(rgba(212, 145, 51, 0.161), #353640af), url(/building.webp);
  background-size: cover;
  background-position: center;
