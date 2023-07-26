@@ -12,7 +12,7 @@ export default function Index() {
       <h1 className="name">Brinkley Hill</h1>
       <div>
        <h2 className="desc">
-        a software <span className="tester-text">tester</span> & <span className="dev-text">developer</span>.
+        software <span className="tester-text">tester</span> & <span className="dev-text">developer</span>
        </h2>
       </div>
      </div>
