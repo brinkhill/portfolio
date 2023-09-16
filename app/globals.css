@@ -35,3 +35,6 @@ body {
  justify-content: center;
  /* padding: 20px; */
 }
+/* details > summary::-webkit-details-marker {
+ display: none;
+} */
