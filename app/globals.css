@@ -30,5 +30,8 @@ body {
  background: rgb(var(--background));
  width: 100svw;
  height: 100svh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
  /* padding: 20px; */
 }
