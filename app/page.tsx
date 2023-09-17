@@ -1,12 +1,10 @@
-//pages.tsx
 "use client";
+// pages.tsx
+import { useEffect } from "react";
 
 interface Section {
  title: string;
  items: Item[];
-}
-interface NavigationProps {
- sections: Section[];
 }
 
 interface Item {
@@ -14,29 +12,51 @@ interface Item {
  url: string;
 }
 
+interface NavigationProps {
+ sections: Section[];
+}
+
 function Navigation({ sections }: NavigationProps) {
- function closeOthers() {
-  const summaries = document.querySelectorAll("summary");
-  summaries.forEach((summary) => {
-   const detail = summary.parentElement as HTMLDetailsElement;
-   if (detail) {
-    detail.removeAttribute("open");
-   }
+ useEffect(() => {
+  function closeOthers(details: HTMLDetailsElement) {
+   const detailsElements = Array.from(document.querySelectorAll("details"));
+   detailsElements.forEach((otherDetails) => {
+    if (otherDetails !== details) {
+     otherDetails.removeAttribute("open");
+    }
+   });
+  }
+
+  const detailsElements = document.querySelectorAll("details");
+  detailsElements.forEach((details) => {
+   details.addEventListener("click", () => {
+    closeOthers(details);
+   });
   });
- }
+
+  return () => {
+   // Cleanup event listeners on unmount
+   detailsElements.forEach((details) => {
+    details.removeEventListener("click", () => {
+     closeOthers(details);
+    });
+   });
+  };
+ }, []);
+
  return (
   <div className="p-10">
    {sections.map((section, index) => (
     <details className="select-none pb-4" key={index}>
      <summary
-      onClick={closeOthers}
+      onClick={() => {}}
       className={`flex cursor-pointer hover:underline text-7xl [&::-webkit-details-marker]:hidden ${index === 0 ? "font-bold" : ""}`}
      >
       {section.title}
      </summary>
      {section.items.map((item, i) => (
-      <p className="text-2xl" key={i}>
-       <a target="_blank" href={item.url}>
+      <p className="text-2xl " key={i}>
+       <a target="_blank" className="hover:underline " href={item.url}>
         {item.name}
        </a>
       </p>
@@ -54,11 +74,11 @@ export default function Main() {
    items: [
     {
      name: "web developer &",
-     url: "",
+     url: "https://nextjs.org/",
     },
     {
      name: "software tester",
-     url: "",
+     url: "https://playwright.dev/",
     },
    ],
   },
